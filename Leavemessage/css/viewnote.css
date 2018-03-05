@@ -1,0 +1,159 @@
+/*index页面*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body { 
+ 
+} 
+a{
+	text-decoration: none;
+}
+textarea{
+	resize: none;
+}
+text{
+	outline: none;
+}
+.allbox{
+	background-color: #E0FFFF;
+	width: 400px;
+	margin: 10px auto;
+	padding: 30px;
+	border-radius: 2px;
+	box-shadow: 0 0 6px #324BC7;	
+}
+/*留言内容*/
+.notebox{
+	width: 100%;
+	border-bottom: 1px solid #103858;
+	margin-bottom: 20px;
+}
+.notebox p{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 22px;
+	color: #103858;
+}
+.notebox p span{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 17px;
+	color: #8e8e8e;
+}
+.notebox p span a{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 17px;
+	color: #8e8e8e;
+}
+.notebox p span a:visited{
+	color: #8e8e8e;
+}
+.notebox p span a:hover{
+	color: #103858;
+}
+.notebox p span a:active{
+	color: #103858;
+}
+/*回复内容*/
+.backnotebox{
+	width: 100%;
+	height: 200px;
+	margin-bottom: 20px;
+	overflow-y: auto;
+}
+.backnotebox p{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 20px;
+	color: #103858;
+	line-height: 25px;
+}
+.backnotebox p a{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 20px;
+	color: #103858;
+}
+.backnotebox p a:visited{
+	color: #103858;
+}
+.backnotebox p a:hover{
+	color: #8e8e8e;
+}
+.backnotebox p a:active{
+	color: #8e8e8e;
+}
+.backnotebox p input[type=button]{
+	outline: none;
+	margin-left: 10px;
+	height: 22px;
+	line-height: 22px;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #836FFF;
+	border: 1px #E0FFFF solid;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 17px;
+	color: #FFFFFF;	
+	background-color: #B9D3EE;
+}
+.backnotebox p input[type=button]:hover{
+	background-color: #836FFF;
+}
+.backnotebox p span{
+	font-size: 17px;
+	color: #8e8e8e;
+}
+/*回复框*/
+.backbtnbox{
+	width: 100%;
+}
+.backbtnbox form textarea{
+	resize: none;
+	overflow: auto;
+	width: 400px;
+	height: 100px;
+	margin-bottom: 20px;
+	background-color: #F5FFFA;
+	border:1px solid #A1ECF5;
+	border-radius:4px;
+	box-shadow:inset 0 0 8px #A1ECF5;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 20px;
+	color: #103858;
+}
+.backbtnbox form input[type=button]{
+	outline: none;
+	position: relative;
+	left: 50%;
+	margin-left: -25px;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #836FFF;
+	border: 1px #836FFF solid;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 22px;
+	color: #FFFFFF;	
+	background-color: #836FFF;
+}
+.backbtnbox form input[type=button]:hover{
+			/* Webkit: Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#836FFF), to(#B9D3EE)); 
+	/* Webkit: Safari 5.1+, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* IE < 10 */ 
+	/* ע�⣺��һ�б���д����� */ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#836FFF, endColorStr=#B9D3EE);	
+}

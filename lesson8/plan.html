@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<TITLE>我的计划</TITLE>
+	<META charset="gb2312">
+	<LINK rel=stylesheet type=text/css href="image/style.css">
+</HEAD>
+
+<BODY>
+<DIV id="planpage">
+    <DIV id=header>
+        	<H1>
+        	我的计划
+       		</H1>
+       		<DIV class=description>My Plans</DIV>
+            <DIV class="userinfo">
+     			<A href="#" class="username" onclick="window.open('edituser.html','','width=600,height=600')">Admin</A> |
+         		<A href="#" onclick="exit();">退出</A>
+ 			</DIV>
+    </DIV>
+	<DIV id=navigation>
+        <UL>
+          <LI><A href="index.html">首页</A> </LI>
+          <LI><A href="plan.html">计划</A></LI> 
+          <LI><A href="dairy.html">动态</A> </LI>      
+        </UL>        
+</DIV>
+    
+
+    <DIV id="plancontent" class="listcolumn">
+        <H1>计划列表</H1>
+        <DIV class="planlist">
+            <ul>
+            	<li>
+                	<h2>计划1</h2>
+                    <p><span>2017.3.1-2017.4.1</span> 学习HTML结构，完成网站HTML设计</p>
+                </li>
+            	<li>
+                	<h2>计划2</h2>
+                    <p><span>2017.4.1-2017.5.1</span> 用PS设计网站的每一个页面</p>
+                </li>
+            	<li>
+                	<h2>计划3</h2>
+                    <p><span>2017.5.1-2017.6.1</span> CSS效果实现</p>
+                </li>                  
+            </ul>
+        </DIV>
+        <form id="addplan_form" action="plan.html" method="post">
+        	<input id="addplan" type="text">
+            <button id="btn_addplan" type="submit">提交</button>
+        </form>
+    </DIV>
+
+
+    <DIV id="footer">
+   <p>Copyright&copy; 2017 My.Website<BR><a href="mailto:webmaster@xyz.com.cn">Contact Me:Administrator</A> 
+    </P>
+    </DIV>
+</DIV>
+</BODY>
+</HTML>

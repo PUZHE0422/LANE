@@ -1,0 +1,83 @@
+BODY {
+	FONT-FAMILY:"Î¢ÈíÑÅºÚ",Verdana,Arial,sans-serif; BACKGROUND: url(bg.jpg); 
+}
+#page {
+	 WIDTH: 765px;MARGIN: 0px auto; BACKGROUND: url(side.jpg) repeat-y center top;
+}
+
+#header {
+	PADDING: 0px; MARGIN: 0px;  WIDTH: 765px; HEIGHT: 185px;BACKGROUND: url(head.jpg) no-repeat center top; 
+}
+#header H1 {
+	TEXT-ALIGN: right;FONT-SIZE: 22px;
+	PADDING-RIGHT: 40px;PADDING-TOP: 60px;	
+}
+#header .description {
+	TEXT-ALIGN:  right; PADDING-RIGHT: 40px; FONT-SIZE: 0.9em;
+	COLOR: #fff; TEXT-DECORATION: none;
+}
+#header .userinfo{
+	TEXT-ALIGN:  right; PADDING: 10px 40px 0px 0px; FONT-SIZE: 0.9em;
+    COLOR: #fff; 
+}
+#header .userinfo a{
+	COLOR: #fff; TEXT-DECORATION: none;FONT-SIZE: 0.9em;
+}
+#header .userinfo a.username{
+	COLOR: #ff0;FONT-SIZE: 0.9em;
+	font-weight:bold;
+}
+
+#navigation {
+	HEIGHT: 45px;LINE-HEIGHT: 45px; BACKGROUND: url(menu.jpg) no-repeat center top; 
+}
+#navigation ul {
+	LIST-STYLE-TYPE: none;TEXT-ALIGN: center; PADDING: 0px; MARGIN: 0px;
+}
+#navigation ul li {
+	DISPLAY: inline;
+}
+#navigation ul li a {
+	LINE-HEIGHT: 45px; 
+	PADDING-left:1em; PADDING-right:1em;margin:0px; LETTER-SPACING: 1px; COLOR: #fff; FONT-SIZE:0.9em; TEXT-DECORATION: none; 
+}
+#navigation ul li a:hover {
+	display:inline-block;
+	height:45px;
+	LINE-HEIGHT: 45px; 
+	BACKGROUND: url(menu2.jpg) center -1px repeat-x;
+	COLOR: #ff0;
+}
+
+#content {
+	FONT-SIZE: 1em
+}
+marquee H2{
+	FONT-SIZE: 1em;
+}
+
+.widecolumn {
+	PADDING-BOTTOM: 20px; MARGIN: 5px 0px 0px 150px; PADDING-LEFT: 0px; WIDTH: 450px; PADDING-RIGHT: 0px; PADDING-TOP: 10px;LINE-HEIGHT: 1.6em
+}
+.widecolumn .postdata {
+	MARGIN: 5px 0px;padding:0 20px;TEXT-ALIGN:  left; COLOR: #333;
+	BORDER-BOTTOM: #ddd 1px solid; BACKGROUND-COLOR: #f8f8f8; BORDER-TOP: #ddd 1px solid;
+}
+
+
+
+
+#footer {
+	BACKGROUND: url(foot.jpg) no-repeat 50% bottom; PADDING: 0px; MARGIN: 0px auto; WIDTH: 765px; HEIGHT: 82px; CLEAR: both;FONT-SIZE: 0.8em;
+}
+#footer P {
+	TEXT-ALIGN: center;
+	PADDING: 12px 0px;
+	MARGIN: 0px;	
+	COLOR: #fff;
+}
+#footer a {
+	COLOR: #fff
+}
+
+

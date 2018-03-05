@@ -1,0 +1,235 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #FFFFFF;
+}
+#allbox{
+	background-color: #E0FFFF;
+	width: 600px;
+	height: 450px;
+	margin: 30px auto;
+	padding-top: 30px;
+	border-radius: 8px;
+	box-shadow: 0 0 6px #324BC7;	
+	z-index: 1;
+}
+#loginheader{
+	position:relative;
+	width:609px;
+	margin-left: -7px;
+	margin-bottom: 40px;
+			/* Webkit: Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B9D3EE), to(#836FFF)); 
+	/* Webkit: Safari 5.1+, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* IE < 10 */ 
+	/* ע�⣺��һ�б���д����� */ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#B9D3EE, endColorStr=#836FFF);			
+}
+#loginheader h1{
+	color:white;
+	font-family:"楷体";
+	font-style: normal;
+	font-size:24px;
+	line-height:44px;
+	padding-left:30px;	
+}
+#loginheader h1:before{
+	content:"";
+	position:absolute;
+	left:-0.5px;
+	top:-11px;
+	border-right:10px solid #2b4f7f;
+	border-top:10px solid transparent;
+	border-bottom:10px solid transparent;
+	z-index:-1;
+}
+/*用户和密码*/
+#login_form label:not([for="checkboxin"]){
+	display:none;
+}
+#usename,#keybord{
+	background-color: #E0EEEF;
+	width: 300px;
+	height: 60px;
+	margin: 15px 150px;
+	padding-left: 12px;
+	border-radius: 5px;
+	border:1px solid #E0FFFF;
+	box-shadow: inset 0 0 6px #324BC7;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 18px;
+	color: #6c6c6f;
+}
+#login_form input:focus{
+	box-shadow:none;
+	border-radius:4px;
+}
+/*弹出框*/
+.erroGet{
+	position: absolute;
+	background-color: #E0EEEF;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 15px;
+	color: red;		
+	line-height: 60px;
+	border: 1px solid #2B4F7F;
+	border-radius: 5px;	
+	left: 50%;
+	top: 80%;
+	text-align: center;
+	margin-top: -30px;	
+	display: none;
+	width: 300px;
+	height: 60px;
+	margin-left: -150px;
+	z-index: 999999;
+}
+.UserGet,.KeyGet{
+	background-color: #E0EEEF;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 15px;
+	color: red;		
+	line-height: 40px;
+	border: 1px solid #2B4F7F;
+	border-radius: 5px;	
+	margin-top: -40px;
+	position: absolute;
+	display: none;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 38px;
+	margin-left: 300px;
+}
+/*others*/
+#others{
+	width: 300px;
+	height: 50px;
+	margin: 10px 150px 0 150px;
+}
+input[type=checkbox]{
+	visibility:hidden;
+}
+.checkboxFive {
+	width: 25px;
+	margin: 0px 10px;
+	position: relative;
+	float:left;
+}
+.checkboxFive label {
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: 0;
+  	left: 0;
+	background: #E0EEEF;
+	border:1px solid #E0EEEF;
+	box-shadow: inset 0 0 3px #324BC7;
+	border-radius:3px;
+}
+.checkboxFive label:after {
+	opacity: 0.2;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 6px;
+	left: 7px;
+	border: 3px solid #324BC7;
+	border-top: none;
+	border-right: none;
+ 
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+.checkboxFive label:hover::after {
+	opacity: 0.5;
+}
+.checkboxFive input[type=checkbox]:checked + label:after {
+	opacity: 0.8;
+}
+.remeberme{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 18px;
+	color: #008aff;
+	padding-top:5px;
+}
+.fgt-reg{
+	float: right;
+}
+.fgt-reg,.wangjimima,.lijizhuce{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 18px;
+	color: #008aff;
+	margin: 20px 5px 0px 5px;
+}
+.wangjimima:hover,.lijizhuce:hover{
+	color: #324bc7;
+}
+/*登录按钮*/
+/*超链接*/
+a:link{text-decoration:none;}
+a:hover{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:active{text-decoration:none;}
+
+.denglubox{
+	width: 120px;
+	height: 45px;
+	margin: 25px 230px 0 230px;
+	text-align: center;
+	padding-top: 1px;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #836FFF;
+	border: 1px #836FFF solid;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 30px;
+	color: #FFFFFF;	
+			/* Webkit: Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B9D3EE), to(#836FFF)); 
+	/* Webkit: Safari 5.1+, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* IE < 10 */ 
+	/* ע�⣺��һ�б���д����� */ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#B9D3EE, endColorStr=#B9D3EE);	
+}
+.denglubox:hover{
+			/* Webkit: Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#836FFF), to(#B9D3EE)); 
+	/* Webkit: Safari 5.1+, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* IE < 10 */ 
+	/* ע�⣺��һ�б���д����� */ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#836FFF, endColorStr=#B9D3EE);	
+}

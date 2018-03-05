@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+	<TITLE>注册</TITLE>
+	<META charset="gb2312">
+	<LINK rel=stylesheet type=text/css href="style/style.css">
+    <script src="style/jquery-1.11.1.min.js" type="text/javascript"></script>
+</HEAD>
+<script type="text/javascript">
+	var flagU=false;
+	var flagPsd=false;
+	var flagPsdAgn=false;
+	var flagPhone=true;
+	$(document).ready(function(){
+		$('input#u_name').blur(function(){
+			var username=$('input#u_name').val();
+			var reg=/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;		
+			if(!reg.test(username)){
+				$('#errorInfo').html('请输入正确的电子邮件格式');
+				$('#errorInfo').fadeIn();
+				$('#errorInfo').fadeOut(3000);
+				flagU=false;
+			}else{
+				$.get("validUser.asp?username="+username,function(data,status){
+					var ret=$.parseJSON(data);
+					if(!ret.flag){
+						$('#errorInfo').html('您输入的Email已经注册!');
+						$('#errorInfo').fadeIn();
+						$('#errorInfo').fadeOut(3000);
+						flagU=false;
+						return;
+					}
+				});
+				flagU=true;
+			}
+		});	
+		$('input#u_pwd').blur(function(){
+			var psd=$('input#u_pwd').val();
+			var reg=/^(?![0-9]+$)(?![A-Za-z]+$).{8,}/;		
+			if(!reg.test(psd)){
+				$('#errorInfo').html('请输入至少8位密码且必须同时包含数字字母');
+				$('#errorInfo').fadeIn();
+				$('#errorInfo').fadeOut(3000);
+				flagPsd=false;
+			}else{
+				flagPsd=true;
+				}
+		});	
+		$('input#u_pwdagn').blur(function(){
+			var psdAgn=$('input#u_pwdagn').val();
+			var psd=$('input#u_pwd').val();	
+			if(psdAgn!=psd){
+				$('#errorInfo').html('两次密码输入不一致');
+				$('#errorInfo').fadeIn();
+				$('#errorInfo').fadeOut(3000);
+				flagPsdAgn=false;
+			}else{
+				flagPsdAgn=true;
+				}
+		});	
+		$('input#u_phone').blur(function(){
+			var phone=$('input#u_phone').val();
+			var reg=/^[1][3,5,7,8][0-9]{9}$/;	
+			if(phone!='' && !reg.test(phone)){
+				$('#errorInfo').html('请输入正确的手机号码');
+				$('#errorInfo').fadeIn();
+				$('#errorInfo').fadeOut(3000);
+				flagPhone=false;
+			}else{
+				flagPhone=true;
+			}
+		});		
+		$('button#btn_reg').click(function(){
+			if(flagU && flagPsd && flagPsdAgn && flagPhone){
+				$('#reg_form').submit();
+			}else{
+				$('#errorInfo').html('请填写完整注册信息!');
+				$('#errorInfo').fadeIn();
+				$('#errorInfo').fadeOut(3000);
+			}
+		});	
+		$('#reg_form').keypress(function(event){
+			if(event.keyCode==13){
+				if(flagU && flagPsd && flagPsdAgn && flagPhone){
+					$('#reg_form').submit();
+				}else{
+					$('#errorInfo').html('请填写完整注册信息!');
+					$('#errorInfo').fadeIn();
+					$('#errorInfo').fadeOut(3000);
+				}
+			}
+		});		
+	});
+</script>
+<BODY>
+<div id="errorInfo">此处显示  id "errorInfo" 的内容</div>
+
+<DIV class="loginboard bigger">
+<DIV  class="loginregheader" >
+        	<H1>欢迎加入课程实验平台</H1>
+    </DIV>
+	<DIV id="regform" class="loginregform">
+    	<form id="reg_form" action="reg.asp" method="post">
+            <p>
+                <label for="u_name">用户名</label>
+                <input id="u_name" name="u_name" type="text" placeholder="请输入Email" required/>
+            </p>
+            <p>
+                <label for="u_pwd">密码</label>
+                <input id="u_pwd" name="u_pwd" type="password" placeholder="请输入密码" required/>
+            </p>
+            <p>
+                <label for="u_pwdagn">密码确认</label>
+                <input id="u_pwdagn" name="u_pwdagn" type="password" placeholder="请再次输入密码" required/>
+            </p>
+            <p>
+                <label for="u_phone">手机号码</label>
+                <input id="u_phone" name="u_phone" type="text" placeholder="请输入手机号码"/>
+            </p>
+            <p>
+            	<button id="btn_reg" type="button">注&nbsp;&nbsp;册</button>
+                <button id="btn_reset" type="reset">重&nbsp;&nbsp;置</button>
+            </p>
+            	
+        </form>        
+	</DIV>
+</DIV>
+</BODY>
+</HTML>

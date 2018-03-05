@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.allbox{
+	width:100%;
+	height: 300px;
+	margin-top: 80px;
+	padding: 20px 100px;
+	background-color: #E0FFFF;
+}
+.allbox p{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 22px;
+	color: #103858;
+	margin-top: 10px;
+}
+.allbox p.top{
+	font-size: 30px;
+	margin-left:200px;
+}

@@ -1,0 +1,102 @@
+/*noteback页面*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.backimg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -999999;
+	margin-top: -35px;
+}
+
+/*点击liuyan后的界面*/
+.message{
+	margin: 0 auto;
+	width: 60%;
+	background-color: #E0FFFF;
+	border-radius: 17px;
+	margin-top: 35px;
+	margin-bottom: 55px;
+	padding: 50px 100px 50px 100px;
+}
+.message p{
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 22px;
+	color: #103858;
+	margin-bottom: 20px;
+}
+.message p input{
+	outline:none;
+	width: 400px;
+	height: 25px;
+	background-color: #F5FFFA;
+	border:1px solid #A1ECF5;
+	border-radius:4px;
+	box-shadow:inset 0 0 8px #A1ECF5;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 22px;
+	color: #103858;
+}
+.message p textarea{
+	resize: none;
+	overflow: auto;
+	display: block;
+	width: 70%;
+	height: 200px;
+	margin-bottom: 30px;
+	background-color: #F5FFFA;
+	border:1px solid #A1ECF5;
+	border-radius:4px;
+	box-shadow:inset 0 0 8px #A1ECF5;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 22px;
+	color: #103858;
+}
+.message .notebackbtn,.message .backbtn{
+	outline: none;
+	width: 70px;
+	height: 40px;
+	text-align: center;
+	padding: 1px 4px;
+	border-radius: 5px;
+	box-shadow: inset 0 0 5px #836FFF;
+	border: 1px #836FFF solid;
+	font-family:"楷体";
+	font-style: normal;
+	font-size: 27px;
+	color: #FFFFFF;	
+			/* Webkit: Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#B9D3EE), to(#836FFF)); 
+	/* Webkit: Safari 5.1+, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #B9D3EE, #836FFF); 
+	/* IE < 10 */ 
+	/* ע�⣺��һ�б���д����� */ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#B9D3EE, endColorStr=#B9D3EE);	
+}
+.message .notebackbtn:hover,.message .backbtn:hover{
+			/* Webkit: Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#836FFF), to(#B9D3EE)); 
+	/* Webkit: Safari 5.1+, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #836FFF, #B9D3EE); 
+	/* IE < 10 */ 
+	/* ע�⣺��һ�б���д����� */ 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(startColorStr=#836FFF, endColorStr=#B9D3EE);	
+}
+
